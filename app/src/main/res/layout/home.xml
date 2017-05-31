@@ -88,7 +88,7 @@
 </ScrollView>
 
     <ImageButton
-        android:id="@+id/floatingActionButton3"
+        android:id="@+id/addNewEvent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -96,7 +96,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="10dp"
         android:layout_marginRight="10dp"
-        android:background=""
+        android:background="@null"
         android:src="@drawable/add_circle"
         />
 </RelativeLayout>

@@ -12,14 +12,15 @@
             android:layout_height="150dp"
             android:orientation="vertical"
             android:background="@color/colorAccent"
-            ></LinearLayout>
+            >
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/eventInfoHeader"
             android:textAlignment="center"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textAllCaps="true"
             android:background="@color/colorCyan"
             />
@@ -34,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/eventTitle"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 />
 
             <EditText
@@ -47,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/eventType"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 />
 
             <RadioGroup
@@ -62,31 +63,31 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:button="null"
+                    android:button="@null"
                     android:drawableTop="@drawable/add_circle"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:button="null"
+                    android:button="@null"
                     android:drawableTop="@drawable/add_circle"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:button="null"
+                    android:button="@null"
                     android:drawableTop="@drawable/add_circle"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:button="null"
+                    android:button="@null"
                     android:drawableTop="@drawable/add_circle"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:button="null"
+                    android:button="@null"
                     android:drawableTop="@drawable/add_circle"/>
             </RadioGroup>
 
@@ -94,7 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/eventPicture"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 />
             
             <Button
@@ -107,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/eventColor"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 />
 
             <RadioGroup
@@ -122,35 +123,35 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:button="null"
+                    android:button="@null"
                     android:drawableTop="@drawable/simple_circle"
                     android:drawableTint="@color/colorAccent"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:button="null"
+                    android:button="@null"
                     android:drawableTop="@drawable/simple_circle"
                     android:drawableTint="@color/colorCyan"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:button="null"
+                    android:button="@null"
                     android:drawableTop="@drawable/simple_circle"
                     android:drawableTint="@color/colorAccent"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:button="null"
+                    android:button="@null"
                     android:drawableTop="@drawable/simple_circle"
                     android:drawableTint="@color/colorCyan"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:button="null"
+                    android:button="@null"
                     android:drawableTop="@drawable/simple_circle"
                     android:drawableTint="@color/colorAccent"/>
             </RadioGroup>
@@ -161,7 +162,7 @@
             android:layout_height="wrap_content"
             android:text="@string/dateTimeHeader"
             android:textAlignment="center"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textAllCaps="true"
             android:background="@color/colorCyan"
             />
@@ -178,7 +179,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/dateTimeDay"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 />
             
             <RelativeLayout
@@ -190,7 +191,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/customDateTimeDate"
                 android:layout_centerInParent="true"
-                ></DatePicker>
+                >
+            </DatePicker>
 
             </RelativeLayout>
             
@@ -198,7 +200,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/dateTimeClock"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 />
             
             <LinearLayout
@@ -219,9 +221,10 @@
                 android:id="@+id/customDateTimeAmPm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:prompt="@array/time_array"
+
                 android:layout_weight="1"
                 ></Spinner>
+                <!-- android:prompt="@array/time_array" -->
 
             </LinearLayout>
         </LinearLayout>
@@ -231,7 +234,7 @@
             android:layout_height="wrap_content"
             android:text="@string/involvementHeader"
             android:textAlignment="center"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textAllCaps="true"
             android:background="@color/colorCyan"
             />
@@ -248,7 +251,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/involvementImportance"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
             <SeekBar
                 android:layout_width="match_parent"
@@ -260,7 +263,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/involvementRole"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -273,7 +276,7 @@
             android:layout_height="wrap_content"
             android:text="@string/prepTimeHeader"
             android:textAlignment="center"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textAllCaps="true"
             android:background="@color/colorCyan" />
 
@@ -288,7 +291,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/prepTimeAdvanced"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -307,16 +310,18 @@
                     android:id="@+id/customPrepTimeAdvancedUnit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:prompt="@array/time_unit_array"
+
                     android:layout_weight="1"
                     ></Spinner>
+                <!-- android:prompt="@array/time_unit_array" -->
+
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/prepTimeLong"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -335,9 +340,11 @@
                     android:id="@+id/customPrepTimeTimeUnit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:prompt="@array/time_unit_array"
+
                     android:layout_weight="1"
                     ></Spinner>
+                <!-- android:prompt="@array/time_unit_array" -->
+
             </LinearLayout>
         </LinearLayout>
 
@@ -346,7 +353,7 @@
             android:layout_height="wrap_content"
             android:text="@string/reminderHeader"
             android:textAlignment="center"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textAllCaps="true"
             android:background="@color/colorCyan" />
 
@@ -361,7 +368,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/reminderNeed"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
             <!-- for choosing important things needed
                  list current items and option to add more? -->
@@ -372,7 +379,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/reminderLastMin"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
 
             <!-- for choosing last minute reminders, use checklist -->
