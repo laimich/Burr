@@ -3,6 +3,10 @@
     <string name="eventInfoHeader">Event Info</string>
     <string name="eventTitle">Title</string>
     <string name="eventType">Type of Event</string>
+    <string name="eventTypeTravel">Travel</string>
+    <string name="eventTypeCelebration">Celebration</string>
+    <string name="eventTypeWork">Work</string>
+    <string name="eventTypeOuting">Outing</string>
     <string name="eventPicture">Upload Picture</string>
     <string name="eventColor">Pick a Color</string>
 

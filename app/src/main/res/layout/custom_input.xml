@@ -64,31 +64,39 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:button="@null"
-                    android:drawableTop="@drawable/add_circle"/>
+                    android:text="@string/eventTypeTravel"
+                    android:textAlignment="center"
+                    android:drawableTop="@drawable/type_travel"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:button="@null"
-                    android:drawableTop="@drawable/add_circle"/>
+                    android:text="@string/eventTypeCelebration"
+                    android:textAlignment="center"
+                    android:drawableTop="@drawable/type_celebration"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:button="@null"
-                    android:drawableTop="@drawable/add_circle"/>
+                    android:text="@string/eventTypeWork"
+                    android:textAlignment="center"
+                    android:drawableTop="@drawable/type_work"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:button="@null"
-                    android:drawableTop="@drawable/add_circle"/>
+                    android:text="@string/eventTypeOuting"
+                    android:textAlignment="center"
+                    android:drawableTop="@drawable/type_outing"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:button="@null"
-                    android:drawableTop="@drawable/add_circle"/>
+                    android:drawableTop="@drawable/type_more"/>
             </RadioGroup>
 
             <TextView
@@ -254,10 +262,9 @@
                 android:textSize="15sp" />
 
             <SeekBar
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/customInvolvementImportance"
-                />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -269,6 +276,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/customInvolvementRole"/>
+
         </LinearLayout>
 
         <TextView
@@ -373,16 +381,107 @@
             <!-- for choosing important things needed
                  list current items and option to add more? -->
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/importantNeededList"
+                android:background="@color/colorAccent"
+                android:text="\n\n\n\n"
+                android:textSize="15sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+           <ToggleButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textOff="test"
+               android:textOn="test"
+               android:layout_weight="1"
+               />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="test"
+                android:textOn="test"
+                android:layout_weight="1"
+                />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="test"
+                android:textOn="test"
+                android:layout_weight="1"
+                />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="test"
+                android:textOn="test"
+                android:layout_weight="1"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/importantNeededInput"
+                    android:layout_weight="4"
+                    />
+
+                <ImageButton
+                    android:id="@+id/importantNeededAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@null"
+                    android:src="@drawable/add_item"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/reminderLastMin"
-                android:textSize="15sp" />
-
+                android:textSize="15sp"
+                />
 
             <!-- for choosing last minute reminders, use checklist -->
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reminderLastMinOption1"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reminderLastMinOption2"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reminderLastMinOption3"
+                />
 
         </LinearLayout>
 
