@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:background="@color/colorAccent"
+            ></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eventInfoHeader"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:background="@color/colorCyan"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eventTitle"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/customEventTitle"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eventType"
+                android:textSize="15dp"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/customEventType"
+                android:weightSum="5"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="null"
+                    android:drawableTop="@drawable/add_circle"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="null"
+                    android:drawableTop="@drawable/add_circle"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="null"
+                    android:drawableTop="@drawable/add_circle"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="null"
+                    android:drawableTop="@drawable/add_circle"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="null"
+                    android:drawableTop="@drawable/add_circle"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eventPicture"
+                android:textSize="15dp"
+                />
+            
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:id="@+id/customEventPicture"
+                android:text="Upload"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eventColor"
+                android:textSize="15dp"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/customEventColor"
+                android:weightSum="5"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="null"
+                    android:drawableTop="@drawable/simple_circle"
+                    android:drawableTint="@color/colorAccent"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="null"
+                    android:drawableTop="@drawable/simple_circle"
+                    android:drawableTint="@color/colorCyan"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="null"
+                    android:drawableTop="@drawable/simple_circle"
+                    android:drawableTint="@color/colorAccent"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="null"
+                    android:drawableTop="@drawable/simple_circle"
+                    android:drawableTint="@color/colorCyan"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="null"
+                    android:drawableTop="@drawable/simple_circle"
+                    android:drawableTint="@color/colorAccent"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dateTimeHeader"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:background="@color/colorCyan"
+            />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dateTimeDay"
+                android:textSize="15dp"
+                />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customDateTimeDate"
+                android:layout_centerInParent="true"
+                ></DatePicker>
+
+            </RelativeLayout>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dateTimeClock"
+                android:textSize="15dp"
+                />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customDateTimeClock"
+                android:layout_weight="2"
+                />
+
+            <Spinner
+                android:id="@+id/customDateTimeAmPm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@array/time_array"
+                android:layout_weight="1"
+                ></Spinner>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/involvementHeader"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:background="@color/colorCyan"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/involvementImportance"
+                android:textSize="15dp" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/customInvolvementImportance"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/involvementRole"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/customInvolvementRole"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prepTimeHeader"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:background="@color/colorCyan" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prepTimeAdvanced"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/customPrepTimeAdvancedTime"
+                    android:layout_weight="2"
+                    />
+
+                <Spinner
+                    android:id="@+id/customPrepTimeAdvancedUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:prompt="@array/time_unit_array"
+                    android:layout_weight="1"
+                    ></Spinner>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prepTimeLong"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/customPrepTimeLongTime"
+                    android:layout_weight="2"
+                    />
+
+                <Spinner
+                    android:id="@+id/customPrepTimeTimeUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:prompt="@array/time_unit_array"
+                    android:layout_weight="1"
+                    ></Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reminderHeader"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:background="@color/colorCyan" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reminderNeed"
+                android:textSize="15dp" />
+
+            <!-- for choosing important things needed
+                 list current items and option to add more? -->
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reminderLastMin"
+                android:textSize="15dp" />
+
+
+            <!-- for choosing last minute reminders, use checklist -->
+
+        </LinearLayout>
+
+        <!-- for adding extra headers then linearlayouts for each section -->
+
+    </LinearLayout>
+</ScrollView>
+
+    <!-- must make an outer parent layout for the side navigation buttons-->

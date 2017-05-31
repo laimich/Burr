@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Burr</string>
+    <string name="eventInfoHeader">Event Info</string>
+    <string name="eventTitle">Title</string>
+    <string name="eventType">Type of Event</string>
+    <string name="eventPicture">Upload Picture</string>
+    <string name="eventColor">Pick a Color</string>
+
+    <string name="dateTimeHeader">Date and Time</string>
+    <string name="dateTimeDay">When is your event?</string>
+    <string name="dateTimeClock">Time</string>
+
+    <string name="involvementHeader">Involvement</string>
+    <string name="involvementImportance">Importance</string>
+    <string name="involvementRole">Role</string>
+
+    <string name="prepTimeHeader">Preperation Time</string>
+    <string name="prepTimeAdvanced">How in advanced to start preparing?</string>
+    <string name="prepTimeLong">How long will it take to prepare?</string>
+
+    <string name="reminderHeader">Reminder</string>
+    <string name="reminderNeed">Important Items Needed</string>
+    <string name="reminderLastMin">Last Minute Reminders</string>
 </resources>
