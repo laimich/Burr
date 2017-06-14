@@ -99,4 +99,34 @@
         android:background="@null"
         android:src="@drawable/add_circle"
         />
+
+    <LinearLayout
+        android:id="@+id/homeAddOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@id/addNewEvent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible"
+        >
+
+        <Button
+            android:id="@+id/homeAddYourself"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:text="@string/homeYourself"
+            android:background="@color/colorWhite"
+            android:layout_marginBottom="10dp"
+            />
+        <Button
+            android:id="@+id/homeAddSteps"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:text="@string/homeSteps"
+            android:background="@color/colorWhite"
+            />
+
+    </LinearLayout>
+
 </RelativeLayout>

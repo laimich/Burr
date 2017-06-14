@@ -1,5 +1,12 @@
 <resources>
+
     <string name="app_name">Burr</string>
+
+    <!-- for home -->
+    <string name="homeYourself">Do it yourself</string>
+    <string name="homeSteps">Step by step</string>
+
+    <!-- for custom input -->
     <string name="eventInfoHeader">Event Info</string>
     <string name="eventTitle">Title</string>
     <string name="eventType">Type of Event</string>
@@ -25,4 +32,20 @@
     <string name="reminderHeader">Reminder</string>
     <string name="reminderNeed">Important Items Needed</string>
     <string name="reminderLastMin">Last Minute Reminders</string>
+
+    <string name="notesHeader">Notes</string>
+    <string name="confirmLabel">Confirm</string>
+
+    <!-- for steps input -->
+    <string name="stepsInputDesc1">What is your event about? \n
+        Who is going to the event?
+        </string>
+    <string name="stepsYourTitle">Your event title</string>
+    <string name="stepsNextArrow">\></string>
+    <string name="stepsInputDesc2">When is your event? \n
+        When does it start?
+        </string>
+    <string name="stepsMonth">Month</string>
+    <string name="stepsDay">Day</string>
+    <string name="stepsYear">Year</string>
 </resources>

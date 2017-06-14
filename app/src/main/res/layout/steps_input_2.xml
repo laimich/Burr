@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="25dp"
+    >
+
+    <!-- for picture -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+    </LinearLayout>
+
+    <!-- for description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stepsInputDesc2"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        />
+
+    <!-- for options -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/stepsMonthLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/stepsMonth"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/stepsMonth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/stepsMonthLabel" />
+
+        <TextView
+            android:id="@+id/stepsDayLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepsDay"
+            android:textSize="15sp"
+            android:layout_alignLeft="@id/stepsDay"
+            />
+
+        <EditText
+            android:id="@+id/stepsDay"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stepsDayLabel"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/stepsYearLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepsYear"
+            android:textSize="15sp"
+            android:layout_alignLeft="@id/stepsYear"
+            />
+
+        <EditText
+            android:id="@+id/stepsYear"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stepsDayLabel"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dateTimeClock"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/customDateTimeClock"
+            android:layout_weight="2"
+            />
+
+        <Spinner
+            android:id="@+id/customDateTimeAmPm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            ></Spinner>
+        <!-- android:prompt="@array/time_array" -->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-10dp"
+        >
+
+        <Button
+            android:id="@+id/stepsNext1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/simple_circle"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/stepsNextArrow"
+            android:textSize="25dp"
+            android:textColor="@color/colorWhite"
+            />
+    </RelativeLayout>
+</LinearLayout>
